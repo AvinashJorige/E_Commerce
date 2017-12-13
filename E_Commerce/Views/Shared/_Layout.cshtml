@@ -3,40 +3,239 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <title>E-Commerce Application</title>
+    <link rel="apple-touch-icon" sizes="76x76" href="~/Content/assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="~/Content/assets/img/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />    
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Bootstrap core CSS     -->
+    <link href="~/Content/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!--  Material Dashboard CSS    -->
+    <link href="~/Content/assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet" />
+    <link href="~/Content/assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="~/Content/assets/css/hover-min.css" rel="stylesheet" />
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="~/Content/assets/css/demo.css" rel="stylesheet" />
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    <div class="wrapper">
+        <div class="sidebar" data-color="purple" data-image="../Content/assets/img/sidebar-1.jpg" style="display:none;">
+            <!--
+                Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+                Tip 2: you can also add an image using data-image tag
+            -->
+            <div class="logo">
+                <a href="http://www.creative-tim.com" class="simple-text">
+                    Creative Tim
+                </a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            <div class="sidebar-wrapper">
+                <ul class="nav">
+                    <li><a href="index.html"><i class="material-icons">dashboard</i><p>Home V1</p></p></a></li>
+                    <li><a href="index-v-2.html"><i class="material-icons">dashboard</i><p>Home Page V2</p></a></li>
+                    <li><a href="index-v-3.html"><i class="material-icons">dashboard</i><p>Home Page V3</p></a></li>
+                    <li><a href="about.html"><i class="material-icons">dashboard</i><p>About us</p></a></li>
+                    <li><a href="category.html"><i class="material-icons">dashboard</i><p>Category</p></a></li>
+                    <li><a href="ads-details.html"><i class="material-icons">dashboard</i><p>Ads details</p></a></li>
+                    <li><a href="pricing.html"><i class="material-icons">dashboard</i><p>Pricing Tables</p></a></li>
+                    <li class="sub-menu-items">
+                        <a data-toggle="collapse" id="sub_menu_lst" data-target="#submenu1" aria-expanded="false" href="#"><i class="material-icons">dashboard</i><p>Account<i class="material-icons sub-menu-items_label pull-right">keyboard_arrow_right</i></p></a>
+                        <ul class="nav collapse" id="submenu1" role="menu" aria-labelledby="btn-1">
+                            <li><a href="account-archived-ads.html"><i class="material-icons">dashboard</i><p>Account - Archived</p></a></li>
+                            <li><a href="account-close.html"><i class="material-icons">dashboard</i><p>Account - Close</p></a></li>
+                            <li><a href="account-favourite-ads.html"><i class="material-icons">dashboard</i><p>Account - Favourite ads</p></a></li>
+                            <li><a href="account-home.html"><i class="material-icons">dashboard</i><p>Account - Home</p></a></li>
+                            <li><a href="account-myads.html"><i class="material-icons">dashboard</i><p>Account - My ads</p></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="account-pending-approval-ads.html"><i class="material-icons">dashboard</i><p>Ads pending/approval</p></a></li>
+                    <li><a href="account-saved-search.html"><i class="material-icons">dashboard</i><p>Saved search</p></a></li>
+                    <li><a href="post-ads.html"><i class="material-icons">dashboard</i><p>Post ads</p></a></li>
+                    <li><a href="posting-success.html"><i class="material-icons">dashboard</i><p>Posting success</p></a></li>
+                    <li><a href="blog.html"><i class="material-icons">dashboard</i><p>Blog</p></a></li>
+                    <li><a href="blog-details.html"><i class="material-icons">dashboard</i><p>Blog Details</p></a></li>
+                    <li><a href="contact.html"><i class="material-icons">dashboard</i><p>Contact</p></a></li>
+                    <li><a href="forgot-password.html"><i class="material-icons">dashboard</i><p>Forgot password</p></a></li>
+                    <li><a href="faq.html"><i class="material-icons">dashboard</i><p>FAQ</p></a></li>
+                    <li><a href="signup.html"><i class="material-icons">dashboard</i><p>Signup</p></a></li>
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+        <div class="main-panel slider-main">
+            <nav class="navbar navbar-transparent navbar-absolute">
+                <div class="container-fluid">
+                    <div class="navbar-minimize">
+                        <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+                            <i class="material-icons visible-on-sidebar-regular">more_vert</i>
+                            <div class="ripple-container"></div>
+                        </button>
+                    </div>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"> E-Commerce </a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <div class="dropdown">
+                                    <span class="btn btn-simple dropdown-toggle" data-toggle="dropdown">
+                                        <span class="dropdown-text Category-a">Category</span>
+                                        <b class="caret"></b>
+                                    </span>
+                                    <ul class="dropdown-menu Category-dropdown">
+                                        <li><a href="#" value="0">All Categories</a></li>
+                                        <li><a href="#" value="subitem">Community</a></li>
+                                        <li><a href="#" value="items-for-sale">Items For Sale</a></li>
+                                        <li><a href="#" value="jobs">Jobs</a></li>
+                                        <li><a href="#" value="personals">Personals</a></li>
+                                        <li><a href="#" value="training">Training</a></li>
+                                        <li><a href="#" value="real_estate">Real Estate</a></li>
+                                        <li><a href="#" value="services">Services</a></li>
+                                        <li><a href="#" value="vehicles">Vehicles</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <span class="btn btn-simple dropdown-toggle" data-toggle="dropdown">
+                                        <span class="dropdown-text Location-b">Location</span>
+                                        <b class="caret"></b>
+                                    </span>
+                                    <ul class="dropdown-menu Location-dropdown">
+                                        <li><a href="#" value="0">All Locations</a></li>
+                                        <li><a href="#" value="subitem">New York</a></li>
+                                        <li><a href="#" value="items-for-sale">California</a></li>
+                                        <li><a href="#" value="jobs">Washington</a></li>
+                                        <li><a href="#" value="personals">Birmingham</a></li>
+                                        <li><a href="#" value="training">Chicago</a></li>
+                                        <li><a href="#" value="real_estate">Phoenix</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn btn-simple btn-info"><i class="material-icons">lock_open</i>&nbsp;Login<div class="ripple-container"></div></button>
+                            </li>
+                            <li>
+                                <button class="btn btn-simple btn-info"><i class="material-icons">perm_identity</i>&nbsp;Signup<div class="ripple-container"></div></button>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-right" role="search">
+                            <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                                <i class="material-icons">search</i>
+                                <div class="ripple-container"></div>
+                            </button>
+                            <div class="form-group is-empty">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <span class="material-input"></span>
+                                <span class="material-input"></span>
+                            </div>
+                        </form>
+                        <!--<form class="navbar-form navbar-right" role="search">
+                            <button type="button" class="btn btn-white btn-round btn-just-icon" data-toggle="modal" data-target="#myModal">
+                                <i class="material-icons">search</i>
+                                <div class="ripple-container"></div>
+                            </button>
+                        </form>-->
+                    </div>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="container-fluid">
+                    @RenderBody()
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Company
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="copyright pull-right">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+                    </p>
+                </div>
+            </footer>
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                <i class="material-icons">clear</i>
+                            </button>
+                            <h4 class="modal-title">Advance Search</h4>
+                            <hr class="text-center">
+                        </div>
+                        <div class="modal-body">
+
+                        </div>
+                        <div class="modal-footer">
+                            <hr class="text-center">
+                            <button type="button" class="btn btn-default btn-simple">Nice Button<div class="ripple-container"></div></button>
+                            <button type="button" class="btn btn-danger btn-simple" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Content/assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="~/Content/assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="~/Content/assets/js/material.min.js" type="text/javascript"></script>
+    <!--  Charts Plugin -->
+    <script src="~/Content/assets/js/chartist.min.js"></script>
+    <!--  Dynamic Elements plugin -->
+    <script src="~/Content/assets/js/arrive.min.js"></script>
+    <!--  PerfectScrollbar Library -->
+    <script src="~/Content/assets/js/perfect-scrollbar.jquery.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="~/Content/assets/js/bootstrap-notify.js"></script>
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <!-- Material Dashboard javascript methods -->
+    <script src="~/Content/assets/js/material-dashboard.js?v=1.2.0"></script>
+    <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+    <script src="~/Content/assets/js/owl.carousel.min.js"></script>
+
+    <script src="~/Content/assets/js/demo.js"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>
