@@ -32,7 +32,7 @@ namespace CoreModel.Interfaces
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        TEntity GetById(object id);
+        TEntity GetById(int id);
 
         /// <summary>
         /// Get first or default entity by filter

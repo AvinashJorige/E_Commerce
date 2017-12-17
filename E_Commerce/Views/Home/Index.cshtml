@@ -1,796 +1,143 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_newLayout.cshtml";
 }
 
-<div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12">
 
-        <div class="card card-nav-tabs card-plain">
-            <div class="card-header" data-background-color="purple">
-                <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-                <div class="nav-tabs-navigation">
-                    <div class="nav-tabs-wrapper">
-                        <h5>BROWSE ADS FROM 8 CATEGORIES</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="content">
-                <div class="content">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-header card-sm hvr-wobble-top card-header-overide" data-background-color="orange">
-                                    <i class="material-icons">supervisor_account</i>
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="title">
-                                        Community
-                                    </h3>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="stats" style="width:100%">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Announcements</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Car Pool - Bike Ride</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Charity - Donate - NGO</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Lost - Found</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Tender Notices</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">General Entertainment</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">View all subcategories </a>
-                                                    </td>
-                                                    <td>→</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-header card-sm hvr-wobble-top card-header-overide" data-background-color="green">
-                                    <i class="material-icons">devices</i>
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="title">
-                                        Electronics
-                                    </h3>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="stats" style="width:100%">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Home Electronics</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Car Pool - Bike Ride</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Charity - Donate - NGO</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Lost - Found</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Tender Notices</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">General Entertainment</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">View all subcategories </a>
-                                                    </td>
-                                                    <td>→</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-header card-sm hvr-wobble-top card-header-overide" data-background-color="red">
-                                    <i class="material-icons">settings</i>
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="title">
-                                        Services
-                                    </h3>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="stats" style="width:100%">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Home Electronics</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Car Pool - Bike Ride</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Charity - Donate - NGO</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Lost - Found</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Tender Notices</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">General Entertainment</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">View all subcategories </a>
-                                                    </td>
-                                                    <td>→</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-header card-sm hvr-wobble-top card-header-overide" data-background-color="blue">
-                                    <i class="material-icons">shopping_cart</i>
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="title">
-                                        Shopping
-                                    </h3>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="stats" style="width:100%">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Home Electronics</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Car Pool - Bike Ride</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Charity - Donate - NGO</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Lost - Found</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Tender Notices</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">General Entertainment</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">View all subcategories </a>
-                                                    </td>
-                                                    <td>→</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-header card-sm hvr-wobble-top card-header-overide" data-background-color="purple">
-                                    <i class="material-icons">card_travel</i>
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="title">
-                                        Jobs
-                                    </h3>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="stats" style="width:100%">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Home Electronics</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Car Pool - Bike Ride</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Charity - Donate - NGO</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Lost - Found</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Tender Notices</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">General Entertainment</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">View all subcategories </a>
-                                                    </td>
-                                                    <td>→</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-header card-sm hvr-wobble-top card-header-overide" data-background-color="red">
-                                    <i class="material-icons">local_library</i>
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="title">
-                                        Training
-                                    </h3>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="stats" style="width:100%">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Home Electronics</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Car Pool - Bike Ride</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Charity - Donate - NGO</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Lost - Found</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Tender Notices</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">General Entertainment</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">View all subcategories </a>
-                                                    </td>
-                                                    <td>→</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-header card-sm hvr-wobble-top card-header-overide" data-background-color="orange">
-                                    <i class="material-icons">business</i>
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="title">
-                                        Real Estate
-                                    </h3>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="stats" style="width:100%">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Home Electronics</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Car Pool - Bike Ride</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Charity - Donate - NGO</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Lost - Found</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Tender Notices</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">General Entertainment</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">View all subcategories </a>
-                                                    </td>
-                                                    <td>→</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="card card-stats">
-                                <div class="card-header card-sm hvr-wobble-top card-header-overide" data-background-color="green">
-                                    <i class="material-icons">directions_car</i>
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="title">
-                                        Vechiles
-                                    </h3>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="stats" style="width:100%">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Home Electronics</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Car Pool - Bike Ride</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Charity - Donate - NGO</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Lost - Found</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">Tender Notices</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">General Entertainment</a>
-                                                    </td>
-                                                    <td>
-                                                        <sapn class="category-counter pull-right label label-info">3</sapn>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="category.html" class="card-td-text">View all subcategories </a>
-                                                    </td>
-                                                    <td>→</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="tim-row">
-            <h3>FEATURED LISTINGS</h3>
-            <hr width="100%" class="text-center" />
-            <div class="content">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item">
-                                <img src="http://demo.graygrids.com/themes/classix-template/assets/img/product/img3.jpg" alt="Raised Image" class="img-rounded img-responsive img-raised hvr-shrink">
-                                <h4>Rounded Raised</h4>
-                            </div>
-                            <div class="item">
-                                <img src="http://demo.graygrids.com/themes/classix-template/assets/img/product/img3.jpg" alt="Raised Image" class="img-rounded img-responsive img-raised hvr-shrink">
-                                <h4>Rounded Raised</h4>
-                            </div>
-                            <div class="item">
-                                <img src="http://demo.graygrids.com/themes/classix-template/assets/img/product/img3.jpg" alt="Raised Image" class="img-rounded img-responsive img-raised hvr-shrink">
-                                <h4>Rounded Raised</h4>
-                            </div>
-                            <div class="item">
-                                <img src="http://demo.graygrids.com/themes/classix-template/assets/img/product/img3.jpg" alt="Raised Image" class="img-rounded img-responsive img-raised hvr-shrink">
-                                <h4>Rounded Raised</h4>
-                            </div>
-                            <div class="item">
-                                <img src="http://demo.graygrids.com/themes/classix-template/assets/img/product/img3.jpg" alt="Raised Image" class="img-rounded img-responsive img-raised hvr-shrink">
-                                <h4>Rounded Raised</h4>
-                            </div>
-                            <div class="item">
-                                <img src="http://demo.graygrids.com/themes/classix-template/assets/img/product/img3.jpg" alt="Raised Image" class="img-rounded img-responsive img-raised hvr-shrink">
-                                <h4>Rounded Raised</h4>
-                            </div>
-                            <div class="item">
-                                <img src="http://demo.graygrids.com/themes/classix-template/assets/img/product/img3.jpg" alt="Raised Image" class="img-rounded img-responsive img-raised hvr-shrink">
-                                <h4>Rounded Raised</h4>
-                            </div>
-                            <div class="item">
-                                <img src="http://demo.graygrids.com/themes/classix-template/assets/img/product/img3.jpg" alt="Raised Image" class="img-rounded img-responsive img-raised hvr-shrink">
-                                <h4>Rounded Raised</h4>
-                            </div>
-                            <div class="item">
-                                <img src="http://demo.graygrids.com/themes/classix-template/assets/img/product/img3.jpg" alt="Raised Image" class="img-rounded img-responsive img-raised hvr-shrink">
-                                <h4>Rounded Raised</h4>
-                            </div>
+    <!--Panel-->
+    @*<div class="card card-plain">
+        <div class="card-header card-no-header deep-orange lighten-1 white-text">
+            Featured
+        </div>
+        <div class="card-body card-no-body">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="nav nav-tabs nav-short nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-short active" data-toggle="tab" href="#panel1" role="tab">
+                                <i class="fa fa-comments-o"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Tab panels -->
+                    <div class="tab-content card">
+                        <span class="nav-body-text">Community</span>
+                        <!--Panel 1-->
+                        <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Announcements
+                                    <span class="badge badge-primary badge-pill">14</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Car Pool - Bike Ride
+                                    <span class="badge badge-primary badge-pill">2</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Charity - Donate - NGO
+                                    <span class="badge badge-primary badge-pill">1</span>
+                                </li>
+                            </ul>
                         </div>
-
-                        <!--<div class="owl-carousel">
-                            <figure>
-                                <img src="http://i.imgur.com/RGGxODF.jpg" class="img-responsive" alt="...">
-                            </figure>
-                            <figure>
-                                <img src="http://i.imgur.com/RGGxODF.jpg" class="img-responsive" alt="...">
-                            </figure>
-                            <figure>
-                                <img src="http://i.imgur.com/RGGxODF.jpg" class="img-responsive" alt="...">
-                            </figure>
-                            <figure>
-                                <img src="http://i.imgur.com/RGGxODF.jpg" class="img-responsive" alt="...">
-                            </figure>
-                        </div>-->
+                        <!--/.Panel 1-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <ul class="nav nav-tabs nav-short nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-short active" data-toggle="tab" href="#panel1" role="tab">
+                                <i class="fa fa-comments-o"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Tab panels -->
+                    <div class="tab-content card">
+                        <span class="nav-body-text">Electronics</span>
+                        <!--Panel 1-->
+                        <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Cras justo odio
+                                    <span class="badge badge-primary badge-pill">14</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Dapibus ac facilisis in
+                                    <span class="badge badge-primary badge-pill">2</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Morbi leo risus
+                                    <span class="badge badge-primary badge-pill">1</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.Panel 1-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <ul class="nav nav-tabs nav-short nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-short active" data-toggle="tab" href="#panel1" role="tab">
+                                <i class="fa fa-comments-o"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Tab panels -->
+                    <div class="tab-content card">
+                        <span class="nav-body-text">Services</span>
+                        <!--Panel 1-->
+                        <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Cras justo odio
+                                    <span class="badge badge-primary badge-pill">14</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Dapibus ac facilisis in
+                                    <span class="badge badge-primary badge-pill">2</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Morbi leo risus
+                                    <span class="badge badge-primary badge-pill">1</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.Panel 1-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <ul class="nav nav-tabs nav-short nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-short active" data-toggle="tab" href="#panel1" role="tab">
+                                <i class="fa fa-comments-o"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Tab panels -->
+                    <div class="tab-content card">
+                        <span class="nav-body-text">Shopping</span>
+                        <!--Panel 1-->
+                        <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Cras justo odio
+                                    <span class="badge badge-primary badge-pill">14</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Dapibus ac facilisis in
+                                    <span class="badge badge-primary badge-pill">2</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Morbi leo risus
+                                    <span class="badge badge-primary badge-pill">1</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/.Panel 1-->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div>*@
 </div>
-<div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="tim-row">
-            <h3>BROWSE BY CATEGORY</h3>
-            <hr width="100%" class="text-center" />
-            <div class="content">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="col-md-2 col-sm-3 col-xs-6 f-category wow fadeIn animated" data-wow-delay="0s" style="visibility: visible;-webkit-animation-delay: 0s; -moz-animation-delay: 0s; animation-delay: 0s;">
-                            <a href="category.html">
-                                <div class="icon-img">
-                                    <img src="http://demo.graygrids.com/themes/classix-template/assets/img/category/img-1.png" class="img-responsive" alt="img">
-                                </div>
-                                <h6>Automobiles</h6>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-xs-6 f-category wow fadeIn animated" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
-                            <a href="category.html">
-                                <div class="icon-img">
-                                    <img src="http://demo.graygrids.com/themes/classix-template/assets/img/category/img-2.png" class="img-responsive" alt="img">
-                                </div>
-                                <h6>Laptops</h6>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-xs-6 f-category wow fadeIn animated" data-wow-delay="0.4s" style="visibility: visible;-webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s;">
-                            <a href="category.html">
-                                <div class="icon-img">
-                                    <img src="http://demo.graygrids.com/themes/classix-template/assets/img/category/img-3.png" class="img-responsive" alt="img">
-                                </div>
-                                <h6>Mobiles</h6>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-xs-6 f-category wow fadeIn animated" data-wow-delay="0.6s" style="visibility: visible;-webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;">
-                            <a href="category.html">
-                                <div class="icon-img">
-                                    <img src="http://demo.graygrids.com/themes/classix-template/assets/img/category/img-4.png" class="img-responsive" alt="img">
-                                </div>
-                                <h6>Electronics</h6>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-xs-6 f-category wow fadeIn animated" data-wow-delay="0.8s" style="visibility: visible;-webkit-animation-delay: 0.8s; -moz-animation-delay: 0.8s; animation-delay: 0.8s;">
-                            <a href="category.html">
-                                <div class="icon-img">
-                                    <img src="http://demo.graygrids.com/themes/classix-template/assets/img/category/img-5.png" class="img-responsive" alt="img">
-                                </div>
-                                <h6>Computer</h6>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-xs-6 f-category wow fadeIn animated" data-wow-delay="1s" style="visibility: visible;-webkit-animation-delay: 1s; -moz-animation-delay: 1s; animation-delay: 1s;">
-                            <a href="category.html">
-                                <div class="icon-img">
-                                    <img src="http://demo.graygrids.com/themes/classix-template/assets/img/category/img-6.png" class="img-responsive" alt="img">
-                                </div>
-                                <h6>Real Estate</h6>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-xs-6 f-category wow fadeIn animated" data-wow-delay="1.2s" style="visibility: visible;-webkit-animation-delay: 1.2s; -moz-animation-delay: 1.2s; animation-delay: 1.2s;">
-                            <a href="category.html">
-                                <div class="icon-img">
-                                    <img src="http://demo.graygrids.com/themes/classix-template/assets/img/category/img-7.png" class="img-responsive" alt="img">
-                                </div>
-                                <h6>Home Appliances</h6>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-xs-6 f-category wow fadeIn animated" data-wow-delay="1.4s" style="visibility: visible;-webkit-animation-delay: 1.4s; -moz-animation-delay: 1.4s; animation-delay: 1.4s;">
-                            <a href="category.html">
-                                <div class="icon-img">
-                                    <img src="http://demo.graygrids.com/themes/classix-template/assets/img/category/img-8.png" class="img-responsive" alt="img">
-                                </div>
-                                <h6>Cameras</h6>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-xs-6 f-category  wow fadeIn animated" data-wow-delay="1.6s" style="visibility: visible;-webkit-animation-delay: 1.6s; -moz-animation-delay: 1.6s; animation-delay: 1.6s;">
-                            <a href="category.html">
-                                <div class="icon-img">
-                                    <img src="http://demo.graygrids.com/themes/classix-template/assets/img/category/img-9.png" class="img-responsive" alt="img">
-                                </div>
-                                <h6>Fashion &amp; Beauty</h6>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-xs-6 f-category wow fadeIn animated" data-wow-delay="1.8s" style="visibility: visible;-webkit-animation-delay: 1.8s; -moz-animation-delay: 1.8s; animation-delay: 1.8s;">
-                            <a href="category.html">
-                                <div class="icon-img">
-                                    <img src="http://demo.graygrids.com/themes/classix-template/assets/img/category/img-10.png" class="img-responsive" alt="img">
-                                </div>
-                                <h6>Kids &amp; Baby Products</h6>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-xs-6 f-category wow fadeIn animated" data-wow-delay="2s" style="visibility: visible;-webkit-animation-delay: 2s; -moz-animation-delay: 2s; animation-delay: 2s;">
-                            <a href="category.html">
-                                <div class="icon-img">
-                                    <img src="http://demo.graygrids.com/themes/classix-template/assets/img/category/img-11.png" class="img-responsive" alt="img">
-                                </div>
-                                <h6>Jobs</h6>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-xs-6 f-category wow fadeIn animated" data-wow-delay="2.2s" style="visibility: visible;-webkit-animation-delay: 2.2s; -moz-animation-delay: 2.2s; animation-delay: 2.2s;">
-                            <a href="category.html">
-                                <div class="icon-img">
-                                    <img src="http://demo.graygrids.com/themes/classix-template/assets/img/category/img-12.png" class="img-responsive" alt="img">
-                                </div>
-                                <h6>Home &amp; Furniture</h6>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--/.Panel-->

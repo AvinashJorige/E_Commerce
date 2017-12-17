@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/fonts/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/materailize/css/materialize.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Dropdown Structure -->
+    <ul id="categorydpdwn" class="dropdown-content categorydpdwn">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+    </ul>
+    <ul id="locationdpdwn" class="dropdown-content">
+        <li><a href="#">one</a></li>
+        <li><a href="#">two</a></li>        
+        <li><a href="#!">three</a></li>
+    </ul>
+
+    <nav>
+        <div class="nav-wrapper">
+            <span class="brand-logo button-collapse" data-activates="slide-out"><i class="fa fa-bars" aria-hidden="true"></i><a href="#">E-Commerce</a></span>            
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a class="dropdown-button" href="#!" data-activates="categorydpdwn">Categorys <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a class="dropdown-button" href="#!" data-activates="locationdpdwn">Locations <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Signup</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!--left side navigation-->
+    <ul id="slide-out" class="side-nav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="images/office.jpg">
+                </div>
+                <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+                <a href="#!name"><span class="white-text name">John Doe</span></a>
+                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="#!">First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+    <!-- END -->
+
+
+    <div>
+        @RenderBody()
+    </div>
+    <script src="~/Content/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="~/Content/materailize/js/materialize.min.js"></script>
+    <script src="~/Scripts/CommonScript/commAPIService.js"></script>
+    <script src="~/Scripts/GenericScript/GenericScript.js"></script>
+    <script>
+        // Initialize collapse button
+        $(".button-collapse").sideNav({
+            menuWidth: 300, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true, // Choose whether you can drag to open on touch screens,
+            onOpen: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is opened
+            onClose: function (el) { /* Do Stuff*/ }, // A function to be called when sideNav is closed
+        });
+        // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+        //$('.collapsible').collapsible();
+    </script>
+</body>
+</html>

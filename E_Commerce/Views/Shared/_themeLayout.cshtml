@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/ecommCss.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<body class="fixed-sn light-blue-skin">
+    <div>
+        <!-- Start your project here-->
+        <!--Double navigation-->
+        <header>
+            <!-- Sidebar navigation -->
+            <div data-id="slide-out" id="slide-out" class="side-nav sn-bg-4 fixed">
+                <ul class="custom-scrollbar list-unstyled">
+                    <!-- Logo -->
+                    <li>
+                        <div class="logo-wrapper waves-light">
+                            <h5 class="sidenav-menu-text">E Commerce Application</h5>
+                        </div>
+                    </li>
+                    <!--/. Logo -->
+                    <!--Search Form-->
+                    <li>
+                        <div class="form-group waves-light">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </li>
+                    <!--/.Search Form-->
+                    <!-- Side navigation links -->
+                    <li>
+                        <ul class="collapsible collapsible-accordion">
+                            <li>
+                                <a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i>Dashboard<i class="fa fa-angle-down rotate-icon"></i></a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li>
+                                            <a [routerLink]="['dasdashboardV1']" class="waves-effect">Dashboard V1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="waves-effect">Dashboard V2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="waves-effect">Dashboard V3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="waves-effect">About us</a>
+                            </li>
+                            <li>
+                                <a href="/Admin/Admin_Category/GetCategoryAll" class="waves-effect">Category</a>
+                            </li>
+                            <li>
+                                <a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i>Ads<i class="fa fa-angle-down rotate-icon"></i></a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="waves-effect">Ads Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="waves-effect">Ads pending/approval</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="waves-effect">Post Ads</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="waves-effect">Pricing Tables</a>
+                            </li>
+                            <li>
+                                <a class="waves-effect">Account</a>
+                            </li>
+                            <li>
+                                <a class="waves-effect">Save search</a>
+                            </li>
+                            <li>
+                                <a class="waves-effect">Posting success</a>
+                            </li>
+                            <li>
+                                <a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i>Blog<i class="fa fa-angle-down rotate-icon"></i></a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="waves-effect">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="waves-effect">Blog details</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="waves-effect">Forget Password</a>
+                            </li>
+                            <li>
+                                <a class="waves-effect">FAQ</a>
+                            </li>
+                            <li>
+                                <a class="waves-effect">Sign up</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--/. Side navigation links -->
+                </ul>
+                <div class="sidenav-bg mask-strong"></div>
+            </div>
+            <!--/. Sidebar navigation -->
+            <!-- Navbar -->
+            <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+                <!-- SideNav slide-out button -->
+                <div class="float-left">
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+                </div>
+                <!-- Breadcrumb-->
+                <div class="breadcrumb-dn mr-auto">
+                    <p>E Commerce Application</p>
+                </div>
+                <ul class="nav navbar-nav nav-flex-icons ml-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Category
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Location
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        &nbsp;
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fa fa-comments-o"></i> <span class="clearfix d-none d-sm-inline-block">Login</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Sign Up</span></a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.Navbar -->
+        </header>
+        <!--/.Double navigation-->
+        <!--Main Layout-->
+        <main>
+            <div class="container-fluid">
+                @RenderBody()
+              
+
+            </div>
+        </main>
+        <!--Main Layout-->
+
+        <script src="~/Scripts/eCommJs.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function () {
+            // SideNav Initialization
+            $(".button-collapse").sideNav();
+        });
+        </script>
+    </div>
+</body>
+</html>

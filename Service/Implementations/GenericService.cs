@@ -42,7 +42,7 @@ namespace Service.Implementations
             return _returnList;
         }
 
-        public T GetById(object id)
+        public T GetById(int id)
         {
             return _iUnitOfWork.ModelRepository.GetById(id);
         }

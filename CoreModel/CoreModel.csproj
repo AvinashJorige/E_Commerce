@@ -41,9 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Interfaces\IActionCore.cs" />
+    <Compile Include="Mappings\Class1.cs" />
     <Compile Include="Mappings\ecom_tbl_Category.cs" />
+    <Compile Include="Mappings\ecom_tbl_Sub_Category.cs" />
+    <Compile Include="Mappings\ecom_tbl_User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

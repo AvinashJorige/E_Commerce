@@ -54,7 +54,7 @@ namespace Repository.Implementation
             return query;
         }
 
-        public virtual TEntity GetById(object id)
+        public virtual TEntity GetById(int id)
         {
             return dbSet.Find(id);
         }

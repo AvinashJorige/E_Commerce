@@ -8,29 +8,32 @@ namespace Repository.Database_storage
     public partial class e_commDb : DbContext
     {
         public e_commDb()
-            : base("name=e_commDb")
+              : base("name=e_commDb")
         {
         }
 
-        public virtual DbSet<ecom_tbl_Category> ecom_tbl_Category { get; set; }
+        static e_commDb()
+        {
+            Database.SetInitializer<e_commDb>(null);
+        }
+        public virtual DbSet<CoreModel.Mappings.ecom_tbl_Category> ecom_tbl_Category { get; set; }
+        public virtual DbSet<CoreModel.Mappings.ecom_tbl_Sub_Category> ecom_tbl_Sub_Category { get; set; }
+        public virtual DbSet<CoreModel.Mappings.ecom_tbl_User> ecom_tbl_User { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<ecom_tbl_Category>()
-                .Property(e => e.ct_Id)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<ecom_tbl_Category>()
-                .Property(e => e.ct_Name)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<ecom_tbl_Category>()
-                .Property(e => e.ct_Type)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<ecom_tbl_Category>()
-                .Property(e => e.ct_Modified_By)
-                .IsUnicode(false);
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<CoreModel.Mappings.ecom_tbl_Category>();
+            modelBuilder.Entity<CoreModel.Mappings.ecom_tbl_Sub_Category>();
+            modelBuilder.Entity<CoreModel.Mappings.ecom_tbl_User>();
+        }
+        private void FixEfProviderServicesProblem()
+        {
+            // The Entity Framework provider type 'System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer'
+            // for the 'System.Data.SqlClient' ADO.NET provider could not be loaded. 
+            // Make sure the provider assembly is available to the running application. 
+            // See http://go.microsoft.com/fwlink/?LinkId=260882 for more information.
+            var instance = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
         }
     }
 }
