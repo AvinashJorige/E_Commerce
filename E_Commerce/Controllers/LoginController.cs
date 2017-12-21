@@ -54,22 +54,21 @@ namespace E_Commerce.Controllers
 
             if (ModelState.IsValid)
             {
-                if (_log != null && _log.Password != null && _log.UserName != null)
+                if (_log != null && _log.Password != null && _log.Email != null)
                 {
-                    _logInfo = _igenericService.GetFirstOrDefault(filter: q => q.UserName == _log.UserName && q.Password == _log.Password);
+                    _logInfo = _igenericService.GetFirstOrDefault(filter: q => q.Email == _log.Email && q.Password == _log.Password);
                     if (_logInfo != null)
                     {
-                        if (_logInfo.PasswordHashKey != null)
-                        {
-                            OldHASHValue = _logInfo.PasswordHashKey == null ? new Cipher().Encrypt(_log.UserName + _log.Password) : _logInfo.PasswordHashKey;
-                            bool isLogin = CompareHashValue(_log.UserName.ToString(), _log.Password, OldHASHValue);
-
+                        OldHASHValue = _logInfo.PasswordHashKey == null ? new Cipher().Encrypt(_log.Email + _log.Password) : _logInfo.PasswordHashKey;
+                        if (OldHASHValue != null)
+                        {   
+                            bool isLogin = CompareHashValue(_log.Email.ToString(), _log.Password, OldHASHValue);
 
                             if (isLogin)
                             {
                                 //Login Success
                                 //For Set Authentication in Cookie (Remeber ME Option)
-                                SignInRemember(_logInfo.UserName.ToString(), false);
+                                SignInRemember(_logInfo.Email.ToString(), false);
 
                                 Session["User_Email"] = _logInfo.Email;
                                 Session["User_Name"] = _logInfo.UserName;
@@ -78,11 +77,11 @@ namespace E_Commerce.Controllers
                                 //Set A Unique ID in session
                                 if (_logInfo.UserRole == "Admin")
                                 {
-                                    return RedirectToAction("Index", "Admin/Admin_Category");
+                                    return Json(new { redirectionURL = "/Admin/Dashboard/Index", loginfo = _logInfo }, JsonRequestBehavior.AllowGet);
                                 }
                                 else
                                 {
-                                    return RedirectToAction("Index", "Customer/Home");
+                                    return Json(new { redirectionURL = "/Customer/Admin_Category", loginfo = _logInfo }, JsonRequestBehavior.AllowGet);
                                 }
                             }
                         }
@@ -90,7 +89,7 @@ namespace E_Commerce.Controllers
                 }
 
             }
-            return RedirectToAction("loginAccess");
+            return Json(new { res = false }, JsonRequestBehavior.AllowGet);
         }
         public bool CompareHashValue(string pharse1, string pharse2, string OldHASHValue)
         {
@@ -162,7 +161,7 @@ namespace E_Commerce.Controllers
 
                 // Last we redirect to a controller/action that requires authentication to ensure a redirect takes place
                 // this clears the Request.IsAuthenticated flag since this triggers a new request
-                return RedirectToLocal();
+                return RedirectToAction("loginAccess");
             }
             catch
             {

@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_newLayout.cshtml";
+}
+
+@section Scripts{
+    <script src="@Url.Content("~/Areas/Admin/scripts/AdminDashboardScript.js")"></script>
+}
+
+
+<section id="dashboard">
+    <div class="row">
+        <div class="col s12 m12">
+            <ul class="collapsible popout" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header green accent-1 active"><span class="accordion_title white-text">Browser Category</span></div>
+                    <div class="collapsible-body">
+                        <div class="categoryList"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header green accent-1"><span class="accordion_title white-text">Second</span></div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header green accent-1"><span class="accordion_title white-text">Third</span></div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

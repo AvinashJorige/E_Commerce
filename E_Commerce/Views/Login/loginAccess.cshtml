@@ -14,11 +14,11 @@
     <link href="~/Content/materailize/css/materialize.min.css" rel="stylesheet" />
     <link href="~/Content/Site.css" rel="stylesheet" />
 </head>
-<body>
+<body class="blue accent-4">
     <div>
         <div class="row">
             <div class="col s4 offset-m4">
-                <div class="card grey lighten-5">
+                <div class="card grey lighten-5" style="top: 30px;">
                     <div class="card-content  black-text">
                         <span class="card-title center-align"><b>E</b>-<b>C</b>ommerce <b>L</b>ogin</span>
                         <div class="row">
@@ -35,7 +35,7 @@
                                         <label for="comm_password">Password</label>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="">
                                     <div class="switch row">
                                         <label>
                                             <input type="checkbox">
@@ -44,7 +44,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="row right-align">
+                                <div class="right-align">
                                     <button class="btn waves-effect waves-light" type="submit" name="action">
                                         Submit
                                         <i class="fa fa-sign-in" aria-hidden="true"></i>
@@ -52,12 +52,16 @@
                                 </div>
                             </form>
                         </div>
-
-                       
                     </div>
                     <div class="card-action">
-                        <a href="#" class="left-align">Forget Password</a>
-                        <a href="#" class="right-align">Create Account</a>
+                        <div class="row">
+                            <div class="col s6 left-align">
+                                <a href="#">Forget Password</a>
+                            </div>
+                            <div class="col s6 right-align">
+                                <a href="#">Create Account</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -111,14 +115,21 @@
         function validateLogin() {
             try {
                 if ($("#comm_email").val() && $("#comm_password").val()) {
-                    var objLogin = {};
-                    objLogin.Email = $("#comm_email").val();
-                    objLogin.Password = $("#comm_password").val();
+                    var _log = {};
+                    _log.Email = $("#comm_email").val();
+                    _log.Password = $("#comm_password").val();
 
                     var url = "/Login/loginAccess";
 
-                    Common.Ajax('POST', url, objLogin, 'json', function (res) {
-                        alert(JSON.stringify(res));
+                    Common.Ajax('POST', url, { _log }, 'json', function (res) {
+                        if (res && res.redirectionURL) {
+                            log_info = res.loginfo;
+                            sessionStorage("logInfo", log_info, 'set');
+                            location.href = res.redirectionURL;
+                        }
+                        else {
+                            alert("Invalid login")
+                        }
                     });
                 }
                 else {

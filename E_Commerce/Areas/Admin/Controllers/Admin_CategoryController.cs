@@ -20,7 +20,7 @@ namespace E_Commerce.Areas.Admin.Controllers
         // GET: Category
         public ActionResult Index()
         {
-            return RedirectToAction("GetCategoryAll");
+            return View(); //RedirectToAction("GetCategoryAll");
         }
 
         // get all the category information

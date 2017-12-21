@@ -168,6 +168,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\Admin_CategoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DashboardController.cs" />
     <Compile Include="Areas\Customer\CustomerAreaRegistration.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -178,6 +179,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Admin\scripts\AdminDashboardScript.js" />
     <Content Include="Areas\Admin\scripts\CategoryScript.js" />
     <Content Include="Content\assets\css\animate.css" />
     <Content Include="Content\assets\css\bootstrap.min.css" />
@@ -219,6 +221,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\additional-methods.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -274,8 +277,10 @@
     <Content Include="Content\materailize\fonts\roboto\Roboto-Regular.woff2" />
     <Content Include="Content\materailize\fonts\roboto\Roboto-Thin.woff" />
     <Content Include="Content\materailize\fonts\roboto\Roboto-Thin.woff2" />
+    <Content Include="Areas\Admin\Views\Dashboard\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\CommonScript\commAPIService.js" />
+    <Content Include="Scripts\CommonScript\commCode.js" />
     <Content Include="Scripts\eCommJs.min.js" />
     <Content Include="Scripts\GenericScript\GenericScript.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -307,9 +312,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
     <Content Include="Views\Shared\_themeLayout.cshtml" />
-    <Content Include="Views\Login\Login.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Shared\_newLayout.cshtml" />
+    <Content Include="Views\Login\loginAccess.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

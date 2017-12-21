@@ -1,1 +1,53 @@
-﻿
+﻿.input-field div.error {
+    position: relative;
+    top: -1rem;
+    left: 0rem;
+    font-size: 0.8rem;
+    color: #f10000;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.containerList {
+    padding: 0 10px;
+    display: block;
+    position: relative;
+}
+
+.icon-item {
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+    float: right;
+    border: 1px solid #fff;
+    padding: 5px 8px;
+    border-radius: 3px;
+    margin: -8px -6px;
+}
+
+.nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    padding: 0 5px;
+}
+
+.logindpdwn {
+    padding: 0 60px;
+}
+
+.logindpdwn-li {
+    border-left: 1px solid;
+}
+
+.accordion_title {
+    font-size: 20px;
+}
+
+.collection.with-header:hover {
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+}
